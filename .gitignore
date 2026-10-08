@@ -1,0 +1,56 @@
+# === Secrets ===
+key.md
+*.env
+.env*
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# === Build & Distribution ===
+build/
+dist/
+*.egg-info/
+*.egg
+MANIFEST
+
+# === Virtual Environments ===
+.venv/
+venv/
+env/
+ENV/
+
+# === Packaging ===
+pip-wheel-metadata/
+.eggs/
+
+# === Testing & Coverage ===
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+*.log
+
+# === Benchmarks ===
+.benchmarks/
+
+# === Type Checking ===
+.mypy_cache/
+.dmypy.json
+.pytype/
+
+# === IDEs & Editors ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# === OS ===
+.DS_Store
+Thumbs.db
+desktop.ini

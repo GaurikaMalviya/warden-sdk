@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "warden-sdk"
+version = "0.1.0"
+description = "Runtime guardrail layer for autonomous AI agent systems"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Warden Authors" }
+]
+keywords = ["ai", "agents", "guardrails", "security", "runtime", "llm"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Security",
+]
+dependencies = [
+    "rich>=13.0.0,<14.0.0",
+    "pyyaml>=6.0.0,<7.0.0",
+    "groq>=0.9.0,<1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-benchmark",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["warden*"]

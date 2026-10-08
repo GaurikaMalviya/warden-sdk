@@ -1,0 +1,6 @@
+# Policy rules
+- field: amount
+  operator: ">"
+  value: 50000
+  action: block
+  reason: Loan amount exceeds $50,000 limit. Requires secondary underwriting review.
